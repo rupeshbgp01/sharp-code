@@ -20,7 +20,7 @@ const TeamCard = () => {
               {/* Pass course details as URL parameters */}
               <Link to={`/registration?courseName=${val.name}&courseDescription=${val.details}&courseDuration=${val.duration}&courseDetails=${val.details}&coursePrice=${val.price}&courseStartingDate=${val.startingDate}`}>
                 <button>Apply</button>
-                <span className="price">₹500</span>
+{/*                 <span className="price">₹500</span> */}
               </Link>
             </div>
           </div>
