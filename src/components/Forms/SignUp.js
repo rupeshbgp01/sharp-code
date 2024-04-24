@@ -40,34 +40,34 @@ export default function Submission() {
     // const signupData = {
     //   ...formData,
     // };
-    const auth = getAuth();
-    createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-        // Signed up
-        const user = userCredential.user;
-        // ...
-      })
-      .catch((error) => {
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        // ..
-      });
-    // try {
-    //   dispatch(setSignupData(signupData));
-    //   dispatch(
-    //     signUp(
-    //       firstName,
-    //       lastName,
-    //       email,
-    //       password,
-    //       confirmPassword,
-    //       domain,
-    //       navigate
-    //     )
-    //   );
-    // } catch (err) {
-    //   toast.error("there is some error bhai>>", err.response.data.message);
-    // }
+    // const auth = getAuth();
+    // createUserWithEmailAndPassword(auth, email, password)
+    //   .then((userCredential) => {
+    //     // Signed up
+    //     const user = userCredential.user;
+    //     // ...
+    //   })
+      // .catch((error) => {
+      //   const errorCode = error.code;
+      //   const errorMessage = error.message;
+      //   // ..
+      // });
+    try {
+      dispatch(setSignupData(signupData));
+      dispatch(
+        signUp(
+          firstName,
+          lastName,
+          email,
+          password,
+          confirmPassword,
+          domain,
+          navigate
+        )
+      );
+    } catch (err) {
+      toast.error("there is some error bhai>>", err.response.data.message);
+    }
 
     setFormData({
       firstName: "",
