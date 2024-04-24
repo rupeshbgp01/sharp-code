@@ -13,7 +13,7 @@ const Footer = () => {
         <div className='container '>
           <div className='box logo'>
             <h1>SHARP-CODE</h1>
-            <span>ONLINE EDUCATION & LEARNING</span>
+            <span>THINK SHARP CODE SMART</span>
             <p className="footp">Don't let your university, Become a barrier in your learning</p>
 
             <a href="https://www.linkedin.com/company/sharpcode01/" target="_blank" className='fab fa-linkedin icon'></a>
@@ -27,8 +27,8 @@ const Footer = () => {
               <a href="/abouthome"><li>About Us</li></a>
               <a href="/team"><li>Internship</li></a>
               <a href="/faq"><li>FAQ</li></a>
-              <a href="/contact"><li> <i className="fa fa-phone-square"></i> Contact Us</li></a>
-              <li><i className='fa fa-envelope'></i>  abc@gmail.com</li>
+              <a href="/contact"><li>  Contact Us</li></a>
+              <li><i className='fa fa-envelope'></i>  team@sharpcode.in</li>
             </ul>
           </div>
           <div className='box link'>
@@ -45,7 +45,7 @@ const Footer = () => {
             <h3>About Us</h3>
             <ul>
               <a href="/privacy"><li>Privacy and Policy</li></a>
-              <a href="/termandcondition"><li>Term and conditions</li></a>
+              <a href="/termandcondition"><li>Terms and conditions</li></a>
               <a href="/codeofconduct"><li>Code of Conduct</li></a>
 
             </ul>

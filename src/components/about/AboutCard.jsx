@@ -12,7 +12,7 @@ const AboutCard = () => {
   }, []);
 
   return (
-    <>
+    <div className="aboutback">
       <h1 className="aboutush1 ourcourses">ABOUT US</h1>
       <section className="aboutHome">
         <div className="container">
@@ -55,7 +55,7 @@ const AboutCard = () => {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

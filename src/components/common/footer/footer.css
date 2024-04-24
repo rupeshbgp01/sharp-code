@@ -2,7 +2,7 @@
 
 .lastline{
   text-align: center;
-  background-color: #363d44;
+  background-color:  #2E3328;
   padding-bottom: 1rem;
 }
 .lastline a{
@@ -12,7 +12,7 @@
 }
 
 footer {
-  background-color: #363d44;
+  background-color:  #2E3328;
   color: white;
 }
 
@@ -107,7 +107,7 @@ footer .last i {
   text-align: center;
   padding: 2px 5px;
   color: white;
-  background-color: #363d44;
+  background-color:  #2E3328;
 }
 
 .legal p {

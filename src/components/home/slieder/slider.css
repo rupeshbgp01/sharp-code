@@ -8,13 +8,14 @@
   .ourcourses{
     text-align: center;
     text-align: center;
+    font-family: Audiowide, sans-serif;;
     align-items: center;
     padding: 10vh 0 0 0;
     color: #3491B2;
     font-weight: 700;
   }
   body {
-    background: #fff;
+    background-color:#fdfdf5 ;
     font-family: "Lato", sans-serif;
     font-size: 1rem;
     color: #000;
@@ -22,14 +23,14 @@
     padding: 0;
   }
 
-body {
-  background: #fff;
+/* body {
+  background: red;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   color: #000;
   margin: 0;
   padding: 0;
-}
+} */
 
 .cards__container {
   overflow: scroll;
@@ -48,7 +49,7 @@ body {
   gap: 1rem;
 }
 
-.card {
+/* .card {
   color: white;
   display: flex;
   flex-direction: column;
@@ -64,17 +65,15 @@ body {
   max-width: 300px;
   color: black;
   position: relative;
-}
+} */
 .card{
     color: white;
     display: flex;
     flex-direction: column;
     gap: 2rem;
    overflow: hidden;
-    /* background:linear-gradient(to top left,white,#5090ccb0,white,#5090cc9a); */
     /* background-color: #3491B2; */
     background-color: white;
-    /* border-radius: 0 3rem ; */
     margin: 1rem;
     /* border: 1px solid rgba(53,100,100,255); */
     box-shadow: 5px 5px 10px rgb(143, 134, 134);
@@ -94,6 +93,9 @@ body {
 .card:hover {
   transform: scale(1.05);
   transition: 0.5s;
+  border-radius: 0 3rem ;
+  /* background:linear-gradient(to top left,white,#5090ccb0,white,#5090cc9a); */
+    
   background-color: #3491B2;
   color: white;
   .card__desc .detail{

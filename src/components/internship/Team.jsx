@@ -9,7 +9,7 @@ import Faq from "../faq/Faq"
 const Team = () => {
   return (
     <>
-      <Back title='Internship' />
+      <Back title='Training/Internship' />
       <section className='team padding'>
         <div className='container grid'>
           <TeamCard />

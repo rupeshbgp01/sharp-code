@@ -82,9 +82,6 @@ const Header = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            <li>
-              <a href="https://unstop.com/jobs/full-stack-developer-sharpcode-970463">Career</a>
-            </li>
             {isLoggedIn ? (
               <li>
                 <Link to="/profile">Profile</Link>

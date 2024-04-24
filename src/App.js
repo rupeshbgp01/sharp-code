@@ -31,12 +31,12 @@ function App() {
           <Route exact path='/register' element={<SignUp />} />
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path="/registration" element={<SubmissionForm />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/submission" element={<Submission />} />
-          <Route path="/update" element={<Update />} />
-          <Route path="/termandcondition" element={<TermandCondition />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/codeofconduct" element={<CodeOfConduct />} />
+          <Route exact path="/profile" element={<Profile />} />
+          <Route exact path="/submission" element={<Submission />} />
+          <Route exact path="/update" element={<Update />} />
+          <Route exact path="/termandcondition" element={<TermandCondition />} />
+          <Route exact path="/privacy" element={<Privacy />} />
+          <Route exact path="/codeofconduct" element={<CodeOfConduct />} />
         </Routes>
         <Footer/>
       </Router>

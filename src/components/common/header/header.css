@@ -1,7 +1,7 @@
 /*--------head------------*/
 .head {
   padding-left: 2rem;
-  background-color: #fff;
+  background-color: #fdfdf5;
   color: black;
   
 }
@@ -26,7 +26,8 @@
 /*--------head------------*/
 /*--------header------------*/
 header {
-  background-color: #E3DAC9;
+  background-color: #ddeff5;
+  /* background: linear-gradient(to right,#ddeff5,#030a0e); */
   margin: 0;
   z-index: 10;
 }
@@ -66,13 +67,18 @@ header ul {
   padding-top: 2.6vh;
 }
 header ul li a {
+  font-family: Audiowide, sans-serif;
+  font-size: 1rem;
   color: black;
   font-weight: 500;
   transition: 0.5s;
+  transform: scale(1); /* Initially set the scale to 1 (no change) */
+  transition: transform 0.5s;
   
 }
 header ul li a:hover {
   color: #3491B2;
+  transform: scale(1.05);
 }
 .start a{
   color: white;
