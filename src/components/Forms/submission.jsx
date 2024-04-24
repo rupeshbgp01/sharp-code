@@ -36,7 +36,7 @@ export default function Submission() {
       console.log("from submission : ",formData);
       await apiConnector("POST", SUBMISSION_API, formData);
       toast.success("Submission successful");
-      navigate('/user/profile'); // Redirect to user profile after successful submission
+      navigate('/profile'); // Redirect to user profile after successful submission
       setFormData(initialFormData); // Reset form data
     } catch (err) {
       toast.error("Error submitting data: " + err.message);

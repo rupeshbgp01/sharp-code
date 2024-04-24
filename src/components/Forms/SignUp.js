@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { setSignupData } from "../../slices/authSlice";
 import { signUp } from "../../Services/Operations/apiAuth";
 import "./Forms.css";
-
+import { getAuth, createUserWithEmailAndPassword } from "firebase";
 export default function Submission() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -19,7 +19,8 @@ export default function Submission() {
     domain: "",
   });
 
-  const { firstName, lastName, email, password, confirmPassword, domain } = formData;
+  const { firstName, lastName, email, password, confirmPassword, domain } =
+    formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({
@@ -36,26 +37,37 @@ export default function Submission() {
       return;
     }
 
-    const signupData = {
-      ...formData,
-    };
-
-    try {
-      dispatch(setSignupData(signupData));
-      dispatch(
-        signUp(
-          firstName,
-          lastName,
-          email,
-          password,
-          confirmPassword,
-          domain,
-          navigate
-        )
-      );
-    } catch (err) {
-      toast.error("there is some error bhai>>", err.response.data.message);
-    }
+    // const signupData = {
+    //   ...formData,
+    // };
+    const auth = getAuth();
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed up
+        const user = userCredential.user;
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+    // try {
+    //   dispatch(setSignupData(signupData));
+    //   dispatch(
+    //     signUp(
+    //       firstName,
+    //       lastName,
+    //       email,
+    //       password,
+    //       confirmPassword,
+    //       domain,
+    //       navigate
+    //     )
+    //   );
+    // } catch (err) {
+    //   toast.error("there is some error bhai>>", err.response.data.message);
+    // }
 
     setFormData({
       firstName: "",
@@ -131,10 +143,16 @@ export default function Submission() {
               required
             >
               <option value="">Select Domain</option>
-              <option value="Basics of C/C++/Java/Python">Basics of C/C++/Java/Python</option>
-              <option value="Front-end Development">Front-end Development</option>
+              <option value="Basics of C/C++/Java/Python">
+                Basics of C/C++/Java/Python
+              </option>
+              <option value="Front-end Development">
+                Front-end Development
+              </option>
               <option value="Back-end Development">Back-end Development</option>
-              <option value="Full Stack Development">Full Stack Development</option>
+              <option value="Full Stack Development">
+                Full Stack Development
+              </option>
               <option value="Android Development">Android Development</option>
               <option value="Machine Learning">Machine Learning</option>
               <option value="Data Science">Data Science</option>
@@ -146,7 +164,11 @@ export default function Submission() {
               Register
             </button>
           </div>
-          or <a className="createnewact" href="/login">  Login?</a>
+          or{" "}
+          <a className="createnewact" href="/login">
+            {" "}
+            Login?
+          </a>
         </form>
       </div>
     </div>

@@ -31,7 +31,7 @@ function App() {
           <Route exact path='/register' element={<SignUp />} />
           <Route exact path='/contact' element={<Contact />} />
           <Route exact path="/registration" element={<SubmissionForm />} />
-          <Route path="/user/profile" element={<Profile />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/submission" element={<Submission />} />
           <Route path="/update" element={<Update />} />
           <Route path="/termandcondition" element={<TermandCondition />} />

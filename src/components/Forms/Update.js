@@ -39,7 +39,7 @@ export default function Update() {
         throw new Error(response)
       }
       toast.success("Data Updated Successfully")
-      navigate("/user/profile")
+      navigate("/profile")
     } catch (err) {
       toast.error("There is some error: ", err);
     }

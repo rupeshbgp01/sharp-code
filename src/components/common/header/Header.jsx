@@ -84,7 +84,7 @@ const Header = () => {
             </li>
             {isLoggedIn ? (
               <li>
-                <Link to="/user/profile">Profile</Link>
+                <Link to="/profile">Profile</Link>
               </li>
             ) : (
               <li>
