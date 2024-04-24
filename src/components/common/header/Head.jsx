@@ -16,7 +16,7 @@ const Head = () => {
             </div>
 
           <div className='social'>
-            <a href="https://www.linkedin.com/company/sharpcode01/"><i className='fab fa-facebook-f icon'></i></a>
+            <a href="https://www.linkedin.com/company/sharpcode01/"><i className='fab fa-linkedin icon'></i></a>
             <a href="https://www.instagram.com/sharp.code?igsh=cHVoeWFrOXFsbTl5"><i className='fab fa-instagram icon'></i></a>
             {/* <i className="fa-brands fa-x-twitter" ></i>
             <i className='fab fa-linkedin icon'></i> */}
