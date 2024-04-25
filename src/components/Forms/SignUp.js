@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { setSignupData } from "../../slices/authSlice";
 import { signUp } from "../../Services/Operations/apiAuth";
 import "./Forms.css";
-// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 export default function Submission() {
   const navigate = useNavigate();
   const dispatch = useDispatch();

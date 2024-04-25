@@ -1,6 +1,6 @@
 .aboutback{
   background: #2E3328;
-  padding-bottom: 5vh;
+  padding-bottom: 10vh;
 }
 .aboutHome {
   display: flex;
@@ -59,20 +59,21 @@
   border-radius: 8px;
   background-color: #ECF6FA;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   margin-top: 2rem; 
+  transition: transform 0.3s ease;
 }
 
 .item:hover {
-  transform: translateY(1.5);
-  background: linear-gradient(to right,#3491B3,#3A545E);;
+  transform: translateY(-5px);
+  /* background: linear-gradient(to right,#3491B3,rgb(219, 172, 139));; */
+  /* background: linear-gradient(to right,#3491B3,#3A545E);; */
+  background-color: #3491B3;
   color: white;
   .text p{
     color: white;
   }
 
 }
-
 .item .img {
   flex: 0 0 100px;
 }

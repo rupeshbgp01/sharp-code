@@ -15,7 +15,7 @@
     font-weight: 700;
   }
   body {
-    background-color:#fdfdf5 ;
+    background-color:#E4EDFE ;
     font-family: "Lato", sans-serif;
     font-size: 1rem;
     color: #000;
@@ -116,6 +116,8 @@
 .explore a :hover{
   background-color: #3491B2;
   color: white;
+  transform: scale(1.2);
+  transition: 0.5s;
 }
 
 .card__desc {

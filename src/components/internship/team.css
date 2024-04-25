@@ -1,11 +1,11 @@
 .team .items {
   transition: 0.5s;
 }
-.team .img {
-  position: relative;
-}
-.team img {
-  height: 30vh;
+
+.team .img img {
+  height: 100%; /* Adjust image height to fill its container */
+  width: 100%; /* Ensure the image fills its container */
+  object-fit: cover; /* Add border radius for rounded corners */
 }
 
 
@@ -65,14 +65,14 @@
   }
   
 }
-.price{
+/* .price{
   position: absolute;
   bottom: 1rem;
   font-size: 1.5rem;
   right: 1.5rem;
   font-weight: 700;
   color: black;
-}
+} */
 .team .items:hover p {
   color: #fff;
 }
