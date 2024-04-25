@@ -14,7 +14,7 @@ export default function Slider2() {
 
                     <div className="card ">
 
-                        <img className="card__img" src={process.env.PUBLIC_URL + '/images/logo/ourstory.jpg'} alt="img"/>
+                        <img className="card__img" src={process.env.PUBLIC_URL + '/images/logo/ourstory.png'} alt="img"/>
                             <div className="card__desc">
                                 <div className="card__title">
                                     Web Development

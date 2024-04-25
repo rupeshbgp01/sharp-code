@@ -26,7 +26,7 @@ Sharpcode, an MSME and ISO registered startup, is dedicated to empowering studen
       {/* Section 2 */}
       <div className="about-item about-item-alt">
         <div className="about-item-left">
-          <img src={process.env.PUBLIC_URL + '/images/logo/ourstory.jpg'} alt="Stuani Logo" />
+          <img src={process.env.PUBLIC_URL + '/images/logo/ourstory.png'} alt="Stuani Logo" />
         </div>
         <div className="about-item-right">
           <h3>Our story</h3>
@@ -39,7 +39,7 @@ SHARPCODE was born from a realization: countless students lacked practical skill
       {/* Section 3 */}
       <div className="about-item">
         <div className="about-item-left">
-          <img src={process.env.PUBLIC_URL + '/images/logo/stufir.jpg'} alt="Our Story Image" />
+          <img src={process.env.PUBLIC_URL + '/images/logo/stufir.png'} alt="Our Story Image" />
         </div>
         <div className="about-item-right">
           <h3>Students First</h3>
