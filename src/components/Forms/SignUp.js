@@ -71,7 +71,8 @@ export default function Submission() {
     <div className="login">
       <div className="login__container">
         <h1 className="title">Register</h1>
-        <form onSubmit={handleOnSubmit} method="POST" className="form__box">
+        <form  method="POST" className="form__box">
+        {/* <form onSubmit={handleOnSubmit} method="POST" className="form__box"> */}
           <div className="form-control">
             <input
               type="text"
@@ -142,9 +143,10 @@ export default function Submission() {
             </select>
           </div>
           <div className="form-control">
-            <button type="submit" className="primary-btn btn">
+            {/* <button type="submit" className="primary-btn btn">
               Register
-            </button>
+            </button> */}
+            <button className="primary-btn btn">Comming Soon</button>
           </div>
           or <a className="createnewact" href="/login">  Login?</a>
         </form>
