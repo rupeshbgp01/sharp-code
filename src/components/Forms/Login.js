@@ -57,7 +57,7 @@ export default function Login() {
                 </div>
                 <div className="form-control ">
                     <label></label>
-                    <button className="primary-btn btn">Comming Soon</button>
+                    <button className="primary-btn btn">Coming Soon</button>
                     {/* <button type="submit" className="primary-btn btn">Login</button> */}
                 </div>
                 <a className="createnewact" href="">Forget password?</a> |

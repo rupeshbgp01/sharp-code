@@ -146,7 +146,7 @@ export default function Submission() {
             {/* <button type="submit" className="primary-btn btn">
               Register
             </button> */}
-            <button className="primary-btn btn">Comming Soon</button>
+            <button className="primary-btn btn">Coming Soon</button>
           </div>
           or <a className="createnewact" href="/login">  Login?</a>
         </form>

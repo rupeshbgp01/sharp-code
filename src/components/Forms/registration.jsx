@@ -163,7 +163,7 @@ export default function SubmissionForm() {
             </div>
             <div className="submission-form-control">
               <button  className="submission-primary-btn btn">
-                Comming Soon
+                Coming Soon
               </button>
               {/* <button type="submit" className="submission-primary-btn btn">
                 Register
