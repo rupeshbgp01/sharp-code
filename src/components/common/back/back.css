@@ -2,6 +2,9 @@
 .back{
   background-image: url("../../../../public/images/bg3.jpg");
 }
+.back h1{
+  font-size: 7vw;
+}
 
 .area{
     z-index: -11;
