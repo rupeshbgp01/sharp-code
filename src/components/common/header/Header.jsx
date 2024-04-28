@@ -82,6 +82,9 @@ const Header = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            <li>
+              <Link target="blank" to="https://unstop.com/p/sharpcoders-coding-contest-sharpcode-973287">Career</Link>
+            </li>
             {isLoggedIn ? (
               <li>
                 <Link to="/profile">Profile</Link>

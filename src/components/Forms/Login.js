@@ -31,8 +31,8 @@ export default function Login() {
         <div className="login">
         <div className="login__container">
             <h1 className="title"> Login</h1>
-            {/* <form onSubmit={handleOnSubmit} className="form__box"> */}
-            <form  className="form__box">
+            <form onSubmit={handleOnSubmit} className="form__box">
+            {/* <form  className="form__box"> */}
                 <div className="form-control">
 
                     <input
@@ -57,8 +57,8 @@ export default function Login() {
                 </div>
                 <div className="form-control ">
                     <label></label>
-                    <button className="primary-btn btn">Coming Soon</button>
-                    {/* <button type="submit" className="primary-btn btn">Login</button> */}
+                    {/* <button className="primary-btn btn">Coming Soon</button> */}
+                    <button type="submit" className="primary-btn btn">Login</button>
                 </div>
                 <a className="createnewact" href="">Forget password?</a> |
                 <a className="createnewact" href="/register"> create new account?</a>
