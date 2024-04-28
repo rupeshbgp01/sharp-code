@@ -162,12 +162,12 @@ export default function SubmissionForm() {
               />
             </div>
             <div className="submission-form-control">
-              <button  className="submission-primary-btn btn">
+              {/* <button  className="submission-primary-btn btn">
                 Coming Soon
-              </button>
-              {/* <button type="submit" className="submission-primary-btn btn">
-                Register
               </button> */}
+              <button type="submit" className="submission-primary-btn btn">
+                Register
+              </button>
               or <a className="submission-createnewact" href="/login"> Login?</a>
             </div>
           </form>
