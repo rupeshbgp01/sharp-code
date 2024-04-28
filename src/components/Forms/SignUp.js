@@ -71,8 +71,8 @@ export default function Submission() {
     <div className="login">
       <div className="login__container">
         <h1 className="title">Register</h1>
-        <form  method="POST" className="form__box">
-        {/* <form onSubmit={handleOnSubmit} method="POST" className="form__box"> */}
+        {/* <form  method="POST" className="form__box"> */}
+        <form onSubmit={handleOnSubmit} method="POST" className="form__box">
           <div className="form-control">
             <input
               type="text"
