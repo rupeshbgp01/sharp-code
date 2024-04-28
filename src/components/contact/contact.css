@@ -45,19 +45,15 @@
 
 .contact-box {
   background: #f9f9f9;
+  display: flex;
+  gap: 20px;
+  text-align: center;
   padding: 1rem 1rem 0 ;
   border-radius: 5px;
 }
 
-.contact-box h4 {
-  font-size: 18px;
-  color: #333;
-}
 
 .contact-box p {
-  font-size: 16px;
-  display: flex;
-  text-align: center;
   color: #555;
 }
 

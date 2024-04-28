@@ -34,10 +34,10 @@ export default function Slider2() {
                         <img className="card__img" src={process.env.PUBLIC_URL + '/images/logo/machine-learning.jpg'} alt="img"/>
                             <div className="card__desc">
                                 <div className="card__title">
-                                    Machine Learning
+                                Mastering the Fundamentals
                                 </div>
                                 <div className="detail">
-                                Discover the principles of machine learning in our cutting-edge 4-week internship. Dive into algorithms, model training, and deployment techniques, and pave the way for innovation in AI-driven applications.
+                                Unlock the fundamentals of programming with our versatile training cum internship program. Choose your preferred language - Python, C, C++,s with hands-on projects and quizzes t
                                 </div>
                                 <div className="buttons">
                                     <a href="/register"><button className='btn'>Apply</button></a>

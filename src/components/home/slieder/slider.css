@@ -70,7 +70,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    /* gap: 2rem; */
    overflow: hidden;
     /* background-color: #3491B2; */
     background-color: white;
@@ -126,7 +126,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 0.5rem;
+  /* gap: 0.5rem; */
   padding: 0.5rem;
  
 
@@ -160,7 +160,7 @@
     color: #10b7d9;
 } */
 
-.btn {
+/* .btn {
   padding: 0.6rem 1rem;
   border-radius: 0.5rem;
   border: 1px solid #3491B2;
@@ -171,16 +171,16 @@
   margin: 0.5rem 0;
   transition: all 1s;
   color: #3491B2;
-}
+} */
 .btn{
-    padding: 0.6rem 1rem;
+    /* padding: 0.6rem 1rem; */
     /* border: 1px solid #3491B2; */
     border-radius: 0.5rem;
     background-color: white;
     bottom: 0;
     font-weight: 600;
     font-size: 0.8rem;
-    margin: 0.5rem 0;
+    /* margin: 0.5rem 0; */
     transition: all 1s;
     color: #3491B2;
 }

@@ -36,8 +36,8 @@ const Contact = () => {
           <div className="contact-form">
             <div className="contact-details">
               <div className="contact-box">
-                <h4>EMAIL:</h4>
-                <p>admin@sharpcode.in</p>
+                <span><h4>EMAIL : </h4></span>
+                <span><p>team@sharpcode.in</p></span>
               </div>
             </div>
             <h3>Send your message</h3>
