@@ -120,9 +120,10 @@ export function login(email, password, navigate) {
 
       // console.log("LOGIN API RESPONSE............ successful")
       toast.success("Login Successful")
-      dispatch(setToken(response.token))
+      console.log(response);
       localStorage.setItem("token", JSON.stringify(response.token))
       localStorage.setItem("email", JSON.stringify(response.email))
+      dispatch(setToken(response.token))
       
       navigate("/profile")
     } catch (error) {
