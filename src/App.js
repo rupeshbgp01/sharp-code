@@ -17,6 +17,8 @@ import Privacy from "./components/common/privacy"
 import AboutCardHome from "./components/about/aboutcardhome"
 import CodeOfConduct from "./components/common/codeofcoduct"
 import SubmissionForm from "./components/Forms/registration"
+import app from "./Services/Operations/firebase"
+import { getAuth } from "firebase/auth"
 function App() {
   return (
     <div className="router__container">
