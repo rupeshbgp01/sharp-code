@@ -1,7 +1,6 @@
 import React from "react"
 // import { blog } from "../../../dummydata"
 import "./footer.css"
-import { Link } from "react-router-dom"
 
 
 const Footer = () => {

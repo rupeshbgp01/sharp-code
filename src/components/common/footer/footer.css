@@ -56,6 +56,9 @@ footer ul a li,footer ul li {
   margin-bottom: 20px;
   color: white;
 }
+footer .link{
+  margin-left: 5vw;
+}
 
 footer .link li::before {
   /* content: "⟶"; */
