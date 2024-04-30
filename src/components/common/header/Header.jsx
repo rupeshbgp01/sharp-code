@@ -5,9 +5,10 @@ import Head from "./Head";
 import "./header.css";
 import { apiConnector } from "../../../Services/apiConnectors";
 import { endpoints } from "../../../Services/apis";
+
 const {
   LOGOUT_API,
-}= endpoints;
+} = endpoints;
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -17,19 +18,20 @@ const Header = () => {
 
   useEffect(() => {
     checkLoggedIn();
-  });
+  }, []);
+
   const checkLoggedIn = () => {
     const token = localStorage.getItem("token");
     if (token) {
-      return setIsLoggedIn(true);
+      setIsLoggedIn(true);
     } else {
-      return setIsLoggedIn(false);
+      setIsLoggedIn(false);
     }
   };
 
   const handleLogout = async () => {
     try {
-      const response = await apiConnector("POST",LOGOUT_API)
+      const response = await apiConnector("POST", LOGOUT_API);
 
       if (response.data.success) {
         localStorage.removeItem("token");
@@ -43,8 +45,6 @@ const Header = () => {
       console.error('Logout error:', error);
     }
   };
-  
-
 
   const changeHeaderOnScroll = () => {
     if (window.scrollY > 100) {
@@ -83,7 +83,7 @@ const Header = () => {
               <Link to="/contact">Contact</Link>
             </li>
             <li>
-              <Link target="blank" to="https://unstop.com/p/sharpcoders-coding-contest-sharpcode-973287">Career</Link>
+              <a href="https://unstop.com/p/sharpcoders-coding-contest-sharpcode-973287" target="_blank" rel="noopener noreferrer">Career</a>
             </li>
             {isLoggedIn ? (
               <li>
@@ -91,15 +91,12 @@ const Header = () => {
               </li>
             ) : (
               <li>
-                <Link to="/login" onClick={checkLoggedIn}>
-                  Login
-                </Link>
+                <Link to="/login">Login</Link>
               </li>
             )}
           </ul>
           <div className="start">
             {isLoggedIn ? (
-              // <a onClick={handleLogout}>Logout</a>
               <Link onClick={handleLogout}>Logout</Link>
             ) : (
               <Link to="/register">Apply For Internship</Link>

@@ -10,7 +10,6 @@ export const endpoints = {
 }
 
 // export const endpoints = {
-// <<<<<<< HEAD
 //   SIGNUP_API:   "http://localhost:4000/api/v2/auth/signup",
 //   LOGIN_API:   "http://localhost:4000/api/v2/auth/login",
 //   PROFILE_API: "http://localhost:4000/api/v2/userdetail/userDetail",
