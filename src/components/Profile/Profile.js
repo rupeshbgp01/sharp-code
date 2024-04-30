@@ -20,10 +20,10 @@ export default function Profile() {
         console.error("Error fetching user data:", error);
       }
     };
-
+  
     fetchUserData();
   }, []);
-
+  
   return (
     <div className="profile-container">
       <div className="buttons">
