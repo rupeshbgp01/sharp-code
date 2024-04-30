@@ -37,7 +37,7 @@ export function signUp(
       // console.log("SIGNUP API RESPONSE............", response)
 
       console.log("response from signUp : ", response);
-      if (response.status!=200) {
+      if (response.status!==200) {
         throw new Error(response.data.message)
       }
       toast.success("Register Successful")
@@ -114,7 +114,7 @@ export function login(email, password, navigate) {
 
       console.log("LOGIN API RESPONSE............", response)
 
-      if (response.status!=200) {
+      if (response.status!==200) {
         throw new Error(response.data.message)
       }
 
