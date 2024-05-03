@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect} from "react";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import "./Forms.css";
@@ -42,6 +42,13 @@ export default function Submission() {
       toast.error("Error submitting data: " + err.message);
     }
   };
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate("/login"); 
+    }
+  }, []);
 
   return (
     <div className="login">

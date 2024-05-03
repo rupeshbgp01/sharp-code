@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 const Hero = () => {
 
   return (
-    <>
+    <div className="herosection">
       <section className='hero'>
         <div className='container'>
           <div className='row'>
@@ -34,7 +34,7 @@ const Hero = () => {
         </ul>
       </div>
 
-    </>
+    </div>
   )
 }
 

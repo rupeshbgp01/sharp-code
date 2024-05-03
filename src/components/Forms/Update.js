@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState , useEffect } from "react";
 import { toast } from "react-hot-toast"
-import { useNavigate } from "react-router-dom"
+import { useNavigate  } from "react-router-dom"
 import "./Forms.css";
 import { apiConnector } from "../../Services/apiConnectors";
 import { endpoints } from "../../Services/apis";
@@ -22,6 +22,13 @@ export default function Update() {
   })
 
   const { gender, collage, collageLocation, batch, mobileNo, branch } = formData
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if (!token) {
+      navigate("/login"); 
+    }
+  }, []);
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({

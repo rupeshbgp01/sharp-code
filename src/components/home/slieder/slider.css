@@ -113,6 +113,11 @@
   border: none;
   box-shadow: none;
 }
+.explore a button{
+  font-size: 1rem;
+  font-weight: 900;
+  color: #000;
+}
 .explore a :hover{
   background-color: #3491B2;
   color: white;

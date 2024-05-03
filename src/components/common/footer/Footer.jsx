@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer__container">
       <footer>
         <div className='container '>
-          <div className='box logo'>
+          <div className='box logop'>
             <h1>SHARP-CODE</h1>
             <span>THINK SHARP CODE SMART</span>
             <p className="footp">Don't let your university, Become a barrier in your learning</p>
@@ -46,7 +46,6 @@ const Footer = () => {
               <a href="/privacy"><li>Privacy and Policy</li></a>
               <a href="/termandcondition"><li>Terms and conditions</li></a>
               <a href="/codeofconduct"><li>Code of Conduct</li></a>
-
             </ul>
           </div>
         </div>
