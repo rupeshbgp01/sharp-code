@@ -1,5 +1,5 @@
 import axios from "axios";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 axios.defaults.withCredentials = true;
 
 export const apiConnector = async (method, url, data = null) => {
