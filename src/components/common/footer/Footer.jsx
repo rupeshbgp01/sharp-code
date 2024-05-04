@@ -13,7 +13,7 @@ const Footer = () => {
           <div className='box logop'>
             <h1>SHARP-CODE</h1>
             <span>THINK SHARP CODE SMART</span>
-            <p className="footp">Don't let your university, Become a barrier in your learning</p>
+            <p className="footp">Never let University interfere with your education</p>
 
             <a href="https://www.linkedin.com/company/sharpcode01/" target="_blank" className='fab fa-linkedin icon'></a>
             <a href="https://www.instagram.com/sharp.code?igsh=cHVoeWFrOXFsbTl5" target="_blank" className='fab fa-instagram icon'></a>
