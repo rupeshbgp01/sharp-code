@@ -1,0 +1,40 @@
+.compete {
+  margin: 3rem;
+  width: 90vw;
+}
+
+.intro p {
+  padding: 2rem;
+}
+
+.ongoing {
+  padding-top: 2rem;
+}
+.upcoming{
+    padding-top: 2rem;
+}
+.past{
+    padding-top: 2rem;
+}
+
+.upcoming {
+  margin-top: 2rem;
+}
+table {
+  width: 95%;
+  margin: 2rem;
+  border-collapse: collapse;
+}
+tr th{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #b3ceed;
+}
+
+tr td {
+  padding: 1rem 0; /* Add padding from top and bottom */
+  text-align: left;
+  border-bottom: 1px solid #392f2f; /* Add a bottom border to all cells */
+  color: #333;
+  font-size: 1rem;
+}

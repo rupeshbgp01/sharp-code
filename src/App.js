@@ -17,6 +17,7 @@ import SubmissionForm from "./components/Forms/registration"
 import CodeOfConduct from "./components/common/commonitems/codeofcoduct"
 import Termandcondition from "./components/common/commonitems/termandcondition"
 import Privacy from "./components/common/commonitems/privacy"
+import Compete from "./testimonials/compete"
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route exact path="/termandcondition" element={<Termandcondition />} />
           <Route exact path="/privacy" element={<Privacy />} />
           <Route exact path="/codeofconduct" element={<CodeOfConduct />} />
+          <Route exact path="/compete" element={<Compete />} />
         </Routes>
         <Footer/>
       </Router>

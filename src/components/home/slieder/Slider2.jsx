@@ -38,7 +38,7 @@ export default function Slider2() {
                                 Mastering the Fundamentals
                                 </div>
                                 <div className="detail">
-                                Unlock the fundamentals of programming with our versatile training cum internship program. Choose your preferred language - Python, C, C++,s with hands-on projects and quizzes t
+                                Explore diverse programming internship. Select Python, C, C++, Java, or other languages. Advance through levels with hands-on projects. Tailored to your choice, embark on the journey to mastery. Start your programming journey today!
                                 </div>
                                 <div className="buttons">
                                     <a href="/register"><button className='btn'>Apply</button></a>

@@ -27,9 +27,9 @@ export default function Profile() {
   const fetchUserData = async () => {
     try {
       const response= await apiConnector("GET",PROFILE_API,{
-        headers : {
-          Authorization : "Bearer " + localStorage.getItem('token')
-        }
+        // headers : {
+        //   Authorization : "Bearer " + localStorage.getItem('token')
+        // }
       });
       setUser(response.data.data);
     } catch (error) {

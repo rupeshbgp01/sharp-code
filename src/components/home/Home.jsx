@@ -7,7 +7,7 @@ import Hero from "./hero/Hero"
 // import Slider from "./slieder/Slider"
 import Slider2 from "./slieder/Slider2"
 import AboutCard from "../about/AboutCard"
-// import Testimonials from "../testimonial/testimonials"
+// import Testinomial from "../../testimonials/Testinomial"
 
 const Home = () => {
   return (
@@ -15,7 +15,7 @@ const Home = () => {
       <Hero />
       <AboutCard />
       <Slider2/>
-      {/* <Testimonials/> */}
+      {/* <Testinomial/> */}
     </>
   )
 }

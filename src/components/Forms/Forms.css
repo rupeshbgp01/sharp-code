@@ -24,11 +24,11 @@
 }
 
 .createnewact{
-    color: black;
-    font-size: 12px;
+    color: #5090cc;
+    font-size:1rem;
 }
 .createnewact:hover{
-    color: #5090cc;
+    color: black;
 }
 
 .form__box{
@@ -70,8 +70,8 @@ textarea:focus, input:focus{
     outline: none;
 }
 .title{
-    background-color: #5090cc;
-    color: white;
+    color: #5090cc;
+    font-family: Audiowide, sans-serif;;
     padding: 1rem 2rem  ;
 
 }

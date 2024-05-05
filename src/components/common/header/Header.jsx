@@ -18,7 +18,7 @@ const Header = () => {
 
   useEffect(() => {
     checkLoggedIn();
-  }, []);
+  }, [isLoggedIn]);
 
   const checkLoggedIn = () => {
     const token = localStorage.getItem("token");
@@ -83,10 +83,13 @@ const Header = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
+            {/* <li>
+              <Link to="/compete">Compete</Link>
+            </li> */}
             <li>
               <a href="https://unstop.com/p/sharpcoders-coding-contest-sharpcode-973287" target="_blank" rel="noopener noreferrer">Career</a>
             </li>
-            {isLoggedIn ? (
+            {localStorage.getItem("token") ? (
               <li>
                 <Link to="/profile">Profile</Link>
               </li>

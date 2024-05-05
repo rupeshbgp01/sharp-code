@@ -60,7 +60,7 @@ export default function Login() {
                     {/* <button className="primary-btn btn">Coming Soon</button> */}
                     <button type="submit" className="primary-btn btn">Login</button>
                 </div>
-                <a className="createnewact" href="">Forget password?</a> |
+                <a className="createnewact" href="">Forget password?</a> or
                 <a className="createnewact" href="/register"> create new account?</a>
             </form>
         </div>
