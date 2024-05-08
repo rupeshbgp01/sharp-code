@@ -7,7 +7,7 @@ export const endpoints = {
   SUBMISSION_API: "https://server-qcrx.onrender.com/api/v2/submission",
   UPDATE_API: "https://server-qcrx.onrender.com/api/v2/profile/updateProfile",
   LOGOUT_API: "https://server-qcrx.onrender.com/api/v2/auth/logout",
-  EMAIL_API: "https://server-qcrx.onrender.com/api/v2/auth/email/sendEmail",
+  EMAIL_API: "https://server-qcrx.onrender.com/api/v2/email/sendEmail",
   }
 
 // export const endpoints = {
