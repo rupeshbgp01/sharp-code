@@ -87,7 +87,7 @@ const Header = () => {
               <Link to="/compete">Compete</Link>
             </li> */}
             <li>
-              <a href="https://unstop.com/p/sharpcoders-coding-contest-sharpcode-973287" target="_blank" rel="noopener noreferrer">Career</a>
+              <a href="https://unstop.com/jobs/full-stack-developer-sharpcode-970463" target="_blank" rel="noopener noreferrer">Career</a>
             </li>
             {localStorage.getItem("token") ? (
               <li>

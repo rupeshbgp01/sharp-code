@@ -7,6 +7,7 @@ export const endpoints = {
   SUBMISSION_API: "https://server-qcrx.onrender.com/api/v2/submission",
   UPDATE_API: "https://server-qcrx.onrender.com/api/v2/profile/updateProfile",
   LOGOUT_API: "https://server-qcrx.onrender.com/api/v2/auth/logout",
+  EMAIL_API: "https://server-qcrx.onrender.com/api/v2/auth/email/sendEmail",
   }
 
 // export const endpoints = {
@@ -16,6 +17,7 @@ export const endpoints = {
 //   SUBMISSION_API: "http://localhost:4000/api/v2/submission",
 //   UPDATE_API: "http://localhost:4000/api/v2/profile/updateProfile",
 //   LOGOUT_API: "http://localhost:4000/api/v2/auth/logout",
+//   EMAIL_API: "http://localhost:4000/api/v2/email/sendEmail"
 // }
 // ||||||| 870fc9b
 //   SIGNUP_API:   "https://server-qcrx.onrender.com/api/v2/auth/signup",
