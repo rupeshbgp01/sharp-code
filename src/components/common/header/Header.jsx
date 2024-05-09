@@ -35,7 +35,6 @@ const Header = () => {
 
       if (response.data.success) {
         localStorage.removeItem("token");
-        localStorage.removeItem("email");
         setIsLoggedIn(false);
         window.location.reload();
         navigate('/');
