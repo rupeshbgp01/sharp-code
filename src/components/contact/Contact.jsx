@@ -65,7 +65,8 @@ const Contact = () => {
               </div>
             </div>
             <h3>Send your message</h3>
-            <form onSubmit={handleFormSubmit}>
+            {/* <form onSubmit={handleFormSubmit}> */}
+            <form>
               <div className="flexSB">
                 <input type="text" name="name" placeholder="Name" required />
                 <input type="email" name="email" placeholder="Email" required />
