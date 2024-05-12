@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { setSignupData } from "../../slices/authSlice";
 import { signUp } from "../../Services/Operations/apiAuth";
 import "./Forms.css";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import auth from "../../Services/Operations/firebase";
 // import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 export default function Submission() {
   const navigate = useNavigate();
@@ -16,10 +18,9 @@ export default function Submission() {
     email: "",
     password: "",
     confirmPassword: "",
-    domain: "",
   });
 
-  const { firstName, lastName, email, password, confirmPassword, domain } = formData;
+  const { firstName, lastName, email, password, confirmPassword } = formData;
 
   const handleOnChange = (e) => {
     setFormData((prevData) => ({
@@ -36,34 +37,39 @@ export default function Submission() {
       return;
     }
 
-    const signupData = {
-      ...formData,
-    };
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed up
+        const user = userCredential.user;
+        console.log(user);
 
-    try {
-      dispatch(setSignupData(signupData));
-      dispatch(
-        signUp(
-          firstName,
-          lastName,
-          email,
-          password,
-          confirmPassword,
-          domain,
-          navigate
-        )
-      );
-    } catch (err) {
-      toast.error("there is some error bhai>>", err.response.data.message);
-    }
+        updateProfile(auth.currentUser, {
+          displayName: firstName + " " + lastName,
+        })
+          .then(() => {
+            // Profile updated!
+            // ...
+          })
+          .catch((error) => {
+            // An error occurred
+            // ...
+          });
 
+        navigate("/profile");
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorCode, errorMessage);
+        // ..
+      });
     setFormData({
       firstName: "",
       lastName: "",
       email: "",
       password: "",
       confirmPassword: "",
-      domain: "",
     });
   };
 
@@ -123,7 +129,7 @@ export default function Submission() {
               required
             />
           </div>
-          <div className="form-control">
+          {/* <div className="form-control">
             <select
               name="domain"
               value={domain}
@@ -132,23 +138,33 @@ export default function Submission() {
               required
             >
               <option value="">Select Domain</option>
-              <option value="Basics of C/C++/Java/Python">Basics of C/C++/Java/Python</option>
-              <option value="Front-end Development">Front-end Development</option>
+              <option value="Basics of C/C++/Java/Python">
+                Basics of C/C++/Java/Python
+              </option>
+              <option value="Front-end Development">
+                Front-end Development
+              </option>
               <option value="Back-end Development">Back-end Development</option>
-              <option value="Full Stack Development">Full Stack Development</option>
+              <option value="Full Stack Development">
+                Full Stack Development
+              </option>
               <option value="Android Development">Android Development</option>
               <option value="Machine Learning">Machine Learning</option>
               <option value="Data Science">Data Science</option>
               <option value="Data Analysis">Data Analysis</option>
             </select>
-          </div>
+          </div> */}
           <div className="form-control">
             <button type="submit" className="primary-btn btn">
               Register
             </button>
             {/* <button className="primary-btn btn">Coming Soon</button> */}
           </div>
-          or <a className="createnewact" href="/login">  Login?</a>
+          or{" "}
+          <a className="createnewact" href="/login">
+            {" "}
+            Login?
+          </a>
         </form>
       </div>
     </div>
