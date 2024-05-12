@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom"; // Importing useNavigate instead of useHistory
 import "./Profile.css";
 import { apiConnector } from "../../Services/apiConnectors";
 import { endpoints } from "../../Services/apis";
@@ -10,19 +11,31 @@ const {
 
 export default function Profile() {
   const [user, setUser] = useState(null);
+  const navigate = useNavigate(); // Using useNavigate for navigation instead of useHistory
 
   useEffect(() => {
-    const fetchUserData = async () => {
-      try {
-        const response= await apiConnector("GET",PROFILE_API);
-        setUser(response.data.data);
-      } catch (error) {
-        console.error("Error fetching user data:", error);
-      }
-    };
-
-    fetchUserData();
+    // Check if user is logged in
+    const token = localStorage.getItem('token');
+    if (!token) {
+      // Redirect to login page if not logged in
+      navigate('/login');
+    } else {
+      fetchUserData();
+    }
   }, []);
+
+  const fetchUserData = async () => {
+    try {
+      const response= await apiConnector("GET",PROFILE_API,{
+        // headers : {
+        //   Authorization : "Bearer " + localStorage.getItem('token')
+        // }
+      });
+      setUser(response.data.data);
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
 
   return (
     <div className="profile-container">
@@ -46,22 +59,8 @@ export default function Profile() {
           </p>
           <p className="profile-text">{user?.email}</p>
         </div>
-      </div>
-      {/* <div className="profile-section">
-        <div className="profile-subsection">
-          <p className="profile-subtitle">About</p>
-          <p
-            className={`profile-about ${
-              user?.additionalDetails?.about
-                ? "text-richblack-5"
-                : "text-richblack-400"
-            }`}
-          >
-            {user?.additionalDetails?.about ?? "Write Something About Yourself"}
-          </p>
-        </div>
-      </div> */}
-      <div className="profile-section">
+        {/* Add other profile details rendering here */}
+        <div className="profile-section">
         <div className="profile-subsection">
           <p className="profile-subtitle">Personal Details</p>
         </div>
@@ -136,6 +135,7 @@ export default function Profile() {
             {/* Add more LinkedIn task links as needed */}
           </div>
         </div>
+      </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React from 'react'
 import './slider.css'
 
 
+
 export default function Slider2() {
     return (
         <div>
@@ -34,10 +35,10 @@ export default function Slider2() {
                         <img className="card__img" src={process.env.PUBLIC_URL + '/images/logo/machine-learning.jpg'} alt="img"/>
                             <div className="card__desc">
                                 <div className="card__title">
-                                    Machine Learning
+                                Mastering the Fundamentals
                                 </div>
                                 <div className="detail">
-                                Discover the principles of machine learning in our cutting-edge 4-week internship. Dive into algorithms, model training, and deployment techniques, and pave the way for innovation in AI-driven applications.
+                                Explore diverse programming internship. Select Python, C, C++, Java, or other languages. Advance through levels with hands-on projects. Tailored to your choice, embark on the journey to mastery. Start your programming journey today!
                                 </div>
                                 <div className="buttons">
                                     <a href="/register"><button className='btn'>Apply</button></a>

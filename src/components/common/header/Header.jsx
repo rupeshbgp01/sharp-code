@@ -5,9 +5,10 @@ import Head from "./Head";
 import "./header.css";
 import { apiConnector } from "../../../Services/apiConnectors";
 import { endpoints } from "../../../Services/apis";
+
 const {
   LOGOUT_API,
-}= endpoints;
+} = endpoints;
 
 const Header = () => {
   const [click, setClick] = useState(false);
@@ -17,24 +18,25 @@ const Header = () => {
 
   useEffect(() => {
     checkLoggedIn();
-  });
+  }, [isLoggedIn]);
+
   const checkLoggedIn = () => {
     const token = localStorage.getItem("token");
     if (token) {
-      return setIsLoggedIn(true);
+      setIsLoggedIn(true);
     } else {
-      return setIsLoggedIn(false);
+      setIsLoggedIn(false);
     }
   };
 
   const handleLogout = async () => {
     try {
-      const response = await apiConnector("POST",LOGOUT_API)
+      const response = await apiConnector("POST", LOGOUT_API);
 
       if (response.data.success) {
         localStorage.removeItem("token");
-        localStorage.removeItem("email");
         setIsLoggedIn(false);
+        window.location.reload();
         navigate('/');
       } else {
         console.error('Logout failed');
@@ -43,8 +45,6 @@ const Header = () => {
       console.error('Logout error:', error);
     }
   };
-  
-
 
   const changeHeaderOnScroll = () => {
     if (window.scrollY > 100) {
@@ -82,21 +82,24 @@ const Header = () => {
             <li>
               <Link to="/contact">Contact</Link>
             </li>
-            {isLoggedIn ? (
+            {/* <li>
+              <Link to="/compete">Compete</Link>
+            </li> */}
+            <li>
+              <a href="https://unstop.com/jobs/full-stack-developer-sharpcode-970463" target="_blank" rel="noopener noreferrer">Career</a>
+            </li>
+            {localStorage.getItem("token") ? (
               <li>
                 <Link to="/profile">Profile</Link>
               </li>
             ) : (
               <li>
-                <Link to="/login" onClick={checkLoggedIn}>
-                  Login
-                </Link>
+                <Link to="/login">Login</Link>
               </li>
             )}
           </ul>
           <div className="start">
             {isLoggedIn ? (
-              // <a onClick={handleLogout}>Logout</a>
               <Link onClick={handleLogout}>Logout</Link>
             ) : (
               <Link to="/register">Apply For Internship</Link>

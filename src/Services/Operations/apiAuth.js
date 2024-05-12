@@ -37,7 +37,7 @@ export function signUp(
       // console.log("SIGNUP API RESPONSE............", response)
 
       console.log("response from signUp : ", response);
-      if (response.status!=200) {
+      if (response.status!==200) {
         throw new Error(response.data.message)
       }
       toast.success("Register Successful")
@@ -114,17 +114,16 @@ export function login(email, password, navigate) {
 
       console.log("LOGIN API RESPONSE............", response)
 
-      if (response.status!=200) {
+      if (response.status!==200) {
         throw new Error(response.data.message)
       }
 
       // console.log("LOGIN API RESPONSE............ successful")
       toast.success("Login Successful")
+      localStorage.setItem("token", JSON.stringify(response.data.token))
       dispatch(setToken(response.token))
-      localStorage.setItem("token", JSON.stringify(response.token))
-      localStorage.setItem("email", JSON.stringify(response.email))
-      
-      navigate("/profile")
+      navigate("/")
+      window.location.reload();
     } catch (error) {
       // console.log("LOGIN API ERROR............", error)
       toast.error("Login Failed ")

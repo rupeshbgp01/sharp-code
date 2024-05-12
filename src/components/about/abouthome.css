@@ -17,7 +17,6 @@
   padding: 3rem;
 }
 
-
 .about-item-alt .about-item-left {
   order: 2; /* Change the order for alternating items */
 }
@@ -25,6 +24,8 @@
   display: flex;
 }
 .recentdata p{
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   padding: 0 4rem;
 }
@@ -73,12 +74,15 @@ h3{
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
 
 }
 .recentdata p{
-  padding: 0 4rem;
   text-align: center;
+  font-size: 1.5rem;
+}
+.recentdata p span{
+  font-size: 1rem;
 }
 
 

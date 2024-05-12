@@ -1,6 +1,10 @@
 /* background animation--------------- */
 .back{
   background-image: url("../../../../public/images/bg3.jpg");
+  height: 85vh;
+}
+.back h1{
+  font-size: 7vw;
 }
 
 .area{

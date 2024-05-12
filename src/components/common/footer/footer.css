@@ -28,22 +28,22 @@ footer .container {
 }
 
 
-footer .logo span {
+footer .logop span {
   color: #3491B2;
   font-size: 14px;
 }
 
-footer .logo p {
+footer .logop p {
   color: white;
   margin: 4vh 0 4vh 0;
 }
 
-footer .logo .icon {
+footer .logop .icon {
   background-color: #3491B2;
   color: white;
   margin-right: 10px;
 }
-footer .logo .icon:hover{
+footer .logop .icon:hover{
   background-color: black;
 }
 
@@ -55,6 +55,9 @@ footer h3 {
 footer ul a li,footer ul li {
   margin-bottom: 20px;
   color: white;
+}
+footer .link{
+  margin-left: 5vw;
 }
 
 footer .link li::before {

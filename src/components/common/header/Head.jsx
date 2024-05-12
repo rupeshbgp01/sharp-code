@@ -1,4 +1,5 @@
 import React from "react"
+// import Header from "./Header"
 
 const Head = () => {
   return (
@@ -11,7 +12,7 @@ const Head = () => {
             alt="error"
           /></a>
           <div className="logo">
-              <h1>SHARP-CODE</h1>
+              <span className="sharpcodehead">SHARP-CODE</span>
               <span>Think Sharp, Code Smart</span>
             </div>
 

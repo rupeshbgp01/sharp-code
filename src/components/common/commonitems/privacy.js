@@ -1,7 +1,7 @@
 import React from "react";
 import "./privacy.css";
 
-export default function Termandcondition() {
+export default function Privacy() {
   return (
     <div className="termsection">
       <header>

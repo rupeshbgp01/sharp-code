@@ -17,10 +17,10 @@ Sharpcode, an MSME and ISO registered startup, is dedicated to empowering studen
       <div className="about-recent-content">
         <h2>Recent Stats:</h2>
         <div className='recentdata'>
-          <p>100% Students First</p>
-          <p>1500+ Enrollments</p>
-          <p>100+ Working on Live Projects</p>
-          <p>15+ Mentors</p>
+          <p>100% <span> Students First</span></p>
+          <p>150+<span> Enrollments</span></p>
+          <p>10+<span> Working on Live Projects</span></p>
+          <p>10+ <span>Mentors</span></p>
         </div>
       </div>
       {/* Section 2 */}

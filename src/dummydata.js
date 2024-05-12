@@ -36,12 +36,12 @@ export const team = [
   {
     cover: "./images/logo/front-end.jpg",
     name: "Frontend-development",
-    details: "Immerse yourself in our transformative 4-week program, mastering HTML, CSS, and JavaScript. Gain proficiency in creating visually stunning and responsive user interfaces, setting the foundation for dynamic web experiences.",
+    details: "Unlock your potential in frontend development with our comprehensive training cum internship program. Master HTML, CSS, JavaScript, and React through level-based training and quizzes. Build your portfolio with a hands-on project, ready to showcase on your resume and social media platforms. Start your journey to becoming a skilled developer today!",
   },
   {
     cover: "./images/logo/data-analysis.jpg",
     name: "Data-analysis",
-    details: "In our focused 4-week internship, students navigate statistical methods and utilize visualization tools to derive insights from data sets. This program equips them to make informed decisions and navigate the complexities of data analysis.",
+    details: "Embark on a transformative journey in data analysis with our comprehensive training cum internship program. Learn SQL, Tableau, Power BI, and other essential tools for data visualization and analysis. Dive into hands-on projects, equipping you to tackle real-world data challenges and enhance your resume and online presence. Elevate your analytical skills and career prospects today!",
   },
   {
     cover: "./images/logo/machine-learning.jpg",
@@ -51,22 +51,22 @@ export const team = [
   {
     cover: "./images/logo/stuani.jpg",
     name: "Fullstack-development",
-    details: "Conquer the intricacies of full stack development in our dynamic 4-week internship. Students seamlessly integrate frontend and backend skills, ensuring a comprehensive understanding of creating responsive, feature-rich web applications.",
+    details: "Unleash your potential in full stack development with our immersive training cum internship. Choose between MERN or MEAN stack and progress through levels with projects and quizzes. Craft a standout full stack project for your resume and social media. Begin your journey to mastering development today!",
   },
   {
     cover: "./images/logo/android.jpg",
     name: "Android-development",
-    details: "Dive into Android app development at SHARPCODE, offering a straightforward approach to building your first app. Explore the vast potential of mobile innovation and kickstart your journey towards app development success.",
+    details: "Unlock your potential in Android development with our dynamic training cum internship program. Dive deep into Flutter and Dart, along with Android Studio, through level-based training and quizzes. Showcase your skills with a polished Android project, perfect for your resume and professional profiles. Embark on your journey to becoming a proficient Android developer today!",
   },
   {
     cover: "./images/logo/back-end.jpg",
     name: "Backend-development",
-    details: "Unleash your potential in our comprehensive 4-week Backend Development internship. Navigate server-side technologies and database management, acquiring skills to build robust, scalable web applications that meet industry standards.",
+    details: "Unlock your potential in backend development with our comprehensive training cum internship program. Master essential languages like Python, Node.js, or PHP, along with frameworks like Express or Django. Progress through levels with hands-on projects and quizzes. Build a standout backend project for your resume and professional profiles. Start your journey to becoming a skilled backend developer today!",
   },
   {
     cover: "./images/logo/pyth.jpg",
-    name: "Python-development",
-    details: "Enroll in our extensive 4-week internship, delving into Python programming essentials from home. Acquire expertise in web development and deploying Python web apps, earning certification and elevating your professional trajectory.",
+    name: "Mastering the Fundamentals",
+    details: "Unlock the fundamentals of programming with our versatile training cum internship program. Choose your preferred language - Python, C, C++, Java, or others - and embark on a journey to mastery. Progress through levels with hands-on projects and quizzes tailored to your language choice. Start your programming journey today!",
   },
   {
     cover: "./images/logo/data-science.jpg",

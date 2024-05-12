@@ -1,7 +1,6 @@
 import React from "react"
 // import { blog } from "../../../dummydata"
 import "./footer.css"
-import { Link } from "react-router-dom"
 
 
 const Footer = () => {
@@ -11,10 +10,10 @@ const Footer = () => {
     <div className="footer__container">
       <footer>
         <div className='container '>
-          <div className='box logo'>
+          <div className='box logop'>
             <h1>SHARP-CODE</h1>
             <span>THINK SHARP CODE SMART</span>
-            <p className="footp">Don't let your university, Become a barrier in your learning</p>
+            <p className="footp">Never let University interfere with your education</p>
 
             <a href="https://www.linkedin.com/company/sharpcode01/" target="_blank" className='fab fa-linkedin icon'></a>
             <a href="https://www.instagram.com/sharp.code?igsh=cHVoeWFrOXFsbTl5" target="_blank" className='fab fa-instagram icon'></a>
@@ -47,7 +46,6 @@ const Footer = () => {
               <a href="/privacy"><li>Privacy and Policy</li></a>
               <a href="/termandcondition"><li>Terms and conditions</li></a>
               <a href="/codeofconduct"><li>Code of Conduct</li></a>
-
             </ul>
           </div>
         </div>

@@ -12,13 +12,15 @@ import Login from "./components/Forms/Login"
 import Profile from "./components/Profile/Profile"
 import Submission from "./components/Forms/submission"
 import Update from "./components/Forms/Update"
-import TermandCondition from "./components/common/termandcondition"
-import Privacy from "./components/common/privacy"
 import AboutCardHome from "./components/about/aboutcardhome"
-import CodeOfConduct from "./components/common/codeofcoduct"
 import SubmissionForm from "./components/Forms/registration"
 import app from "./Services/Operations/firebase"
 import { getAuth } from "firebase/auth"
+import CodeOfConduct from "./components/common/commonitems/codeofcoduct"
+import Termandcondition from "./components/common/commonitems/termandcondition"
+import Privacy from "./components/common/commonitems/privacy"
+import Compete from "./testimonials/compete"
+
 function App() {
   return (
     <div className="router__container">
@@ -36,9 +38,10 @@ function App() {
           <Route exact path="/profile" element={<Profile />} />
           <Route exact path="/submission" element={<Submission />} />
           <Route exact path="/update" element={<Update />} />
-          <Route exact path="/termandcondition" element={<TermandCondition />} />
+          <Route exact path="/termandcondition" element={<Termandcondition />} />
           <Route exact path="/privacy" element={<Privacy />} />
           <Route exact path="/codeofconduct" element={<CodeOfConduct />} />
+          <Route exact path="/compete" element={<Compete />} />
         </Routes>
         <Footer/>
       </Router>

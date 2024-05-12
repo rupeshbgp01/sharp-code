@@ -2,7 +2,7 @@
   background-image: url("../../../../public/images/bg2.jpg");
   background-size: cover;
   /* position: absolute; */
-  position: relative;
+  position:relative;
   left: 0;
   z-index: -1;
   max-width: 100%;
@@ -47,6 +47,9 @@
 }
 .btns>a>button{
   z-index: 100;
+}
+.row{
+  margin: 1rem;
 }
 
 @media screen and (max-width: 768px) {

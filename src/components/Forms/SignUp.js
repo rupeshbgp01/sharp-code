@@ -7,6 +7,7 @@ import { signUp } from "../../Services/Operations/apiAuth";
 import "./Forms.css";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import auth from "../../Services/Operations/firebase";
+// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 export default function Submission() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -76,6 +77,7 @@ export default function Submission() {
     <div className="login">
       <div className="login__container">
         <h1 className="title">Register</h1>
+        {/* <form  method="POST" className="form__box"> */}
         <form onSubmit={handleOnSubmit} method="POST" className="form__box">
           <div className="form-control">
             <input
@@ -156,6 +158,7 @@ export default function Submission() {
             <button type="submit" className="primary-btn btn">
               Register
             </button>
+            {/* <button className="primary-btn btn">Coming Soon</button> */}
           </div>
           or{" "}
           <a className="createnewact" href="/login">
